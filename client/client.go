@@ -86,7 +86,7 @@ func WithSerialType(serialType string) Option {
 }
 
 // singleton pattern to create a defaultClient instance
-var defaultClientInstance = NewDefaultClient()
+var DefaultClient = NewDefaultClient()
 
 var NewDefaultClient = func() *defaultClient {
 	return &defaultClient{
